@@ -1,0 +1,12 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin responsive($property, $value-mobile, $value-desktop) {
+    #{$property}: $value-mobile;
+    @media (min-width: $breakpoint-mobile) {
+      #{$property}: $value-desktop;
+    }
+  }

@@ -1,0 +1,23 @@
+@import '../styles/variables';
+
+.product-list-container {
+    padding: 1rem;
+  
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+  
+    .loading-indicator {
+      text-align: center;
+      margin: 1rem 0;
+    }
+  }
+
+  // Responsive Styles
+@media (max-width: $breakpoint-mobile) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}

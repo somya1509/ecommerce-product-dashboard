@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.product-list-container {
+  padding: 1rem;
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .loading-indicator {
+    text-align: center;
+    margin: 1rem 0;
+  }
+}
+
